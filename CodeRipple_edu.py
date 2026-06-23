@@ -193,7 +193,7 @@ def add_swt_features(example):
 
 if __name__ == "__main__":
     base_dir = "./AI_Code_Detection_Education" # Path of the dataset.
-    for i in range(4,14):  
+    for i in range(1,14):  
         csv_filename = f"variant_{i}_full.csv"
         csv_path = os.path.join(base_dir, csv_filename)
         
