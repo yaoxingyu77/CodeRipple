@@ -33,15 +33,14 @@ If you find this work useful, please cite:
 ```bibtex
 @inproceedings{yao-etal-2026-coderipple,
     title = "{C}ode{R}ipple: Wavelet-Based Detection of {LLM}-Generated Code",
-    author = "Yao, Xingyu and
-      Mao, Zhendong and
+    author = "Yao, Xingyu  and
+      Mao, Zhendong  and
       Wang, Quan",
-    editor = "Liakata, Maria and
-      Moreira, Viviane P. and
-      Zhang, Jiajun and
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
       Jurgens, David",
-    booktitle = "Proceedings of the 64th Annual Meeting of the
-      Association for Computational Linguistics (Volume 1: Long Papers)",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
     month = jul,
     year = "2026",
     address = "San Diego, California, United States",
@@ -50,4 +49,5 @@ If you find this work useful, please cite:
     doi = "10.18653/v1/2026.acl-long.1777",
     pages = "38351--38364",
     ISBN = "979-8-89176-390-6",
+    abstract = "Detecting LLM-generated code is crucial for ensuring software provenance, security, reliability, and licensing compliance. Existing training-free detectors, mostly adapted from text-based methods, rely on global statistics of the Token Perplexity Sequence (TPS) and struggle with code. We reveal a key insight: despite the convergence of global statistics, LLM-generated and human-written code differ fundamentally in their local TPS dynamics: the former shows narrow transient spikes while the latter exhibits broad sustained fluctuations. To capture this distinction, we introduce CodeRipple, a novel training-free detection framework that employs wavelet analysis to characterize TPS morphology across scales. It jointly leverages the Stationary Wavelet Transform to model fluctuation shape and the Discrete Wavelet Transform to quantify cross-scale energy distribution. Evaluated on three challenging benchmarks spanning diverse programming languages, multiple generating LLMs, and various evasion strategies, CodeRipple consistently outperforms existing training-free methods, demonstrating its superior effectiveness and generalizability without any model training. Code available at: https://github.com/yaoxingyu77/CodeRipple."
 }
